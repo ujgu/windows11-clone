@@ -276,3 +276,26 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+#context-menu {
+  position: fixed;
+  z-index: 10000;
+  width: 170px;
+  background: rgba(249, 249, 249, 255);
+  border-radius: 8px;
+  display: none;
+}
+#context-menu.visible {
+  display: block;
+}
+#context-menu .item {
+  padding: 8px 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: #494848;
+  cursor: default;
+  border-radius: inherit;
+}
+#context-menu .item:hover {
+  background: rgba(231, 231, 231, 255);
+}

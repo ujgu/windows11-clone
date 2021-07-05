@@ -109,3 +109,28 @@ time.addEventListener("click", () => {
     timepop.style.bottom = "52px";
   }
 });
+const contextMenu = document.getElementById("context-menu");
+const scope = document.querySelector("body");
+
+scope.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+
+  const { clientX: mouseX, clientY: mouseY } = event;
+  contextMenu.style.top = `${mouseY}px`;
+  contextMenu.style.left = `${mouseX}px`;
+
+  contextMenu.classList.add("visible");
+
+  // setTimeout(() => {
+  //   contextMenu.classList.remove("visible");
+  // });
+});
+
+scope.addEventListener("click", (e) => {
+  if (e.target.offsetParent != contextMenu) {
+    contextMenu.classList.remove("visible");
+  }
+});
+contextMenu.addEventListener("click", (e) => {
+  contextMenu.classList.remove("visible");
+});
