@@ -83,6 +83,7 @@ function myFunction() {
     document.getElementById("notifications").style = "filter: invert(100%);";
     document.getElementById("search").style = "filter: invert(100%);";
     document.getElementById("clck").style = "filter: invert(100%);";
+    document.getElementById("side").style = "filter: invert(100%);";
 
     a = a + 1;
     console.log("click", a);
@@ -133,4 +134,15 @@ scope.addEventListener("click", (e) => {
 });
 contextMenu.addEventListener("click", (e) => {
   contextMenu.classList.remove("visible");
+});
+let notification = document.getElementById("notifications");
+let sidepop = document.getElementsByClassName("side-notification")[0];
+
+notification.addEventListener("click", () => {
+  console.log("clicked");
+  if (sidepop.style.right == "0px") {
+    sidepop.style.right = "-310px";
+  } else {
+    sidepop.style.right = "0px";
+  }
 });

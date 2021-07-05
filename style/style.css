@@ -42,7 +42,7 @@ body {
   border-radius: 0.3rem;
 }
 #start-icon {
-  background-image: url(/images/win11-logo.png);
+  background-image: url(/images/windows-11-logo.svg);
   background-size: cover;
 }
 #search {
@@ -215,6 +215,36 @@ body {
   font-size: 1.5rem;
   left: 95px;
   top: 35px;
+  cursor: default;
+}
+.side-notification {
+  position: absolute;
+  right: -310px;
+  top: 0;
+  width: 300px;
+  height: 95vh;
+  background: rgba(224, 224, 224, 0.74);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in;
+}
+.side-notification #cstm {
+  position: absolute;
+  right: 5px;
+  font-size: 0.8rem;
+  cursor: default;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(66, 66, 66);
+}
+.side-notification #no-content {
+  position: absolute;
+  top: 450px;
+  left: 70px;
+  cursor: default;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .speaker {
   position: absolute;
@@ -235,6 +265,10 @@ body {
   font-size: 0.8rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: default;
+}
+#value {
+  cursor: default;
 }
 .speaker .extra {
   position: absolute;
