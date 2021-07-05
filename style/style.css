@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(/images/wp1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.taskbar {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(224, 224, 224, 0.74);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.taskbar-center-items {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-left: 40%;
+  height: 50px;
+  width: 350px;
+}
+.apps {
+  display: flex;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+}
+.apps:hover {
+  background: rgba(207, 205, 205, 0.699);
+  backdrop-filter: blur(4px);
+  border-radius: 0.3rem;
+}
+#start-icon {
+  background-image: url(/images/win11-logo.png);
+  background-size: cover;
+}
+#search {
+  background-image: url(/images/search.svg);
+  background-size: cover;
+}
+#file {
+  background-image: url(/images/file.png);
+  background-size: cover;
+}
+#edge {
+  background-image: url(/images/edge.png);
+  background-size: cover;
+}
+#store {
+  background-image: url(/images/store.png);
+  background-size: cover;
+}
+#settings {
+  background-image: url(/images/settings.png);
+  background-size: cover;
+}
+.taskbar-right {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0 auto auto;
+  width: 250px;
+  height: 50px;
+}
+.right-icons {
+  display: flex;
+  width: 30px;
+  height: 35px;
+}
+.right-icons:hover {
+  background-color: #9c9b9b;
+  border-radius: 0.3rem;
+}
+#notifications {
+  display: flex;
+  margin: auto 0.5rem auto auto;
+  background-image: url(/images/notification.png);
+  background-size: cover;
+}
+#clock {
+  display: flex;
+  height: 50px;
+  width: auto;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto 0.5rem auto auto;
+  align-items: center;
+  cursor: default;
+}
+
+#langs {
+  width: auto;
+  height: 50px;
+  margin: auto 0.5rem auto auto;
+  align-items: center;
+  font-size: 0.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: default;
+}
+#volume {
+  width: 18px;
+  height: 18px;
+  margin: auto 0.5rem auto auto;
+  background-image: url(/images/Volume.png);
+  background-size: cover;
+}
+#network {
+  width: 22px;
+  height: 18px;
+  margin: auto 0.5rem auto auto;
+  background-image: url(/images/network.png);
+  background-size: cover;
+}
+#up-arrow {
+  width: 20px;
+  height: 20px;
+  margin: auto 0.5rem auto auto;
+  background-image: url(/images/up.png);
+  background-size: cover;
+}
+.content {
+  display: flexbox;
+  width: 90%;
+  height: 850px;
+  margin: 0.3rem;
+  text-align: center;
+}
+.app {
+  display: flexbox;
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 60px;
+  height: auto;
+  border-radius: 0.2rem;
+  text-align: center;
+}
+.app:hover {
+  background-color: #80a7c2;
+}
+.app .app-icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#pc {
+  background-image: url(/images/this-pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#users {
+  background-image: url(/images/user.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#edgelogo {
+  background-image: url(/images/edge.png);
+  background-size: cover;
+}
+#wp-change {
+  background-image: url(/images/settings.png);
+  background-size: cover;
+}
+.app-name {
+  display: flex;
+  width: 50px;
+  height: auto;
+  margin-top: 0.3rem;
+  text-align: center;
+  color: aliceblue;
+  font-size: 0.9rem;
+  pointer-events: none;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px,
+    #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+.startmenu {
+  position: absolute;
+  bottom: -660px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  /* visibility: hidden; */
+}
+.startmenu img {
+  border-radius: 8px;
+}
+.time {
+  position: absolute;
+  bottom: -110px;
+  right: 2px;
+  border-radius: 4px;
+  width: 300px;
+  height: 100px;
+  transition: all 0.3s ease-in;
+  background: rgba(224, 224, 224, 0.74);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+}
+.clock2 {
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  left: 95px;
+  top: 35px;
+}
+.speaker {
+  position: absolute;
+  bottom: -110px;
+  height: 110px;
+  width: 350px;
+  transition: all 0.3s ease-in;
+  background: rgba(224, 224, 224, 0.74);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+  right: 2px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.speaker .upside {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.speaker .extra {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 20px;
+  height: 24px;
+}
+.speaker .extra img {
+  width: 20px;
+  height: 18px;
+}
+.volume-downside {
+  display: inline-block;
+}
+.volume-downside img {
+  position: absolute;
+  left: 15px;
+  top: 60px;
+  width: 30px;
+  height: 30px;
+}
+.slidecontainer {
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  top: 65px;
+  width: 220px;
+}
+.slider {
+  width: 220px;
+  background: #d3d3d3;
+}
+.volume-value {
+  position: absolute;
+  right: 20px;
+  top: 55px;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

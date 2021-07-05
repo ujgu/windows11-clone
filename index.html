@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <!-- <link rel="stylesheet" href="/style/dark.css" />
+    <link rel="stylesheet" href="/style/third.css" /> -->
+    <title>Windows 11</title>
+  </head>
+  <body>
+    <div class="time" id="time-pop">
+      <div class="clock2" id="clck">0</div>
+    </div>
+    <div class="speaker" id="spk">
+      <div class="upside"><p id="realtek">Speaker(Realtek(R) Audio)</p></div>
+      <div class="extra">
+        <img id="upbtn" src="/images/up.png" alt="" srcset="" />
+      </div>
+      <div class="volume-downside">
+        <img id="vlmbtn" src="/images/Volume.png" alt="" srcset="" />
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="45"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+        <div class="volume-value"><p id="value">50</p></div>
+      </div>
+    </div>
+    <div class="startmenu">
+      <img src="/images/startmenu.JPG" alt="" />
+    </div>
+    <div class="taskbar" id="tb">
+      <div class="taskbar-center-items">
+        <div class="apps" id="start-icon"></div>
+        <div class="apps" id="search"></div>
+        <div class="apps" id="file"></div>
+        <div class="apps" id="edge"></div>
+        <div class="apps" id="store"></div>
+        <div class="apps" id="settings"></div>
+      </div>
+      <div class="taskbar-right">
+        <div class="right-icons" id="up-arrow"></div>
+        <div class="right-icons" id="network"></div>
+        <div class="right-icons" id="volume"></div>
+        <div class="right-icons" id="langs">
+          ENG<br />
+          TRQ
+        </div>
+        <div class="right-icons" id="clock">
+          <div class="clock"></div>
+        </div>
+        <div class="right-icons" id="notifications"></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="app" id="user">
+        <div class="app-icon" id="users">
+          <!-- This PC -->
+        </div>
+        <div class="app-name">Users</div>
+      </div>
+      <div class="app" id="this-pc">
+        <div class="app-icon" id="pc">
+          <!-- This PC -->
+        </div>
+        <div class="app-name">This PC</div>
+      </div>
+      <div class="app">
+        <div class="app-icon" id="edgelogo">
+          <!-- Edge -->
+        </div>
+        <div class="app-name">Microsoft Edge</div>
+      </div>
+      <div class="app" onclick="myFunction()">
+        <div class="app-icon" id="wp-change">
+          <!-- Wp Change-->
+        </div>
+        <div class="app-name">Wallpaper Changer</div>
+      </div>
+    </div>
+  </body>
+  <script src="/app/app.js"></script>
+</html>
